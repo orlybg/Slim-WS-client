@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<h1>Artist Search</h1>
+
+		<?php if (!empty($artists)) { ?>
+			<?php foreach($artists as $Artist) { ?>
+
+				<div>
+					<p>Artist: 
+						<?php echo $Artist->name; ?>
+					</p>
+				</div>
+
+			<?php } ?>
+
+		<?php } else { ?>
+			<h2>No Artist Found</h2>
+		<?php } ?>
+	</body>
+</html>	
